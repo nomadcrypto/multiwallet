@@ -16,10 +16,10 @@ const shouldBehaveLikeEthWallet = require("./ETHWallet.behaviour.js");
 const shouldBehaveLikeERC20Wallet = require("./ERC20Wallet.behaviour.js");
 const shouldBehaveLikeERC721Wallet = require("./ERC721Wallet.behaviour.js");
 contract("BaseWallet", function(accounts) {
-	shouldBehaveLikeTokenRegistery(accounts);
-	shouldBehaveLikeRegisteredToken(accounts);
-	shouldBehaveLikeEthWallet(accounts)
-	shouldBehaveLikeERC20Wallet(accounts);
-	shouldBehaveLikeERC721Wallet(accounts);
+    shouldBehaveLikeTokenRegistery(accounts);
+    shouldBehaveLikeRegisteredToken(accounts);
+    shouldBehaveLikeEthWallet(accounts)
+    shouldBehaveLikeERC20Wallet(accounts);
+    shouldBehaveLikeERC721Wallet(accounts);
 
 });
