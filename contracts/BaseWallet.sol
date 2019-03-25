@@ -120,7 +120,7 @@ contract BaseWallet {
     * @dev add the token
     * @param token_address the address of the token or 0x in the case of eth
     * @param name the name of the token, e.g. Etherum, SimpleToken, CryptoKitties, etc
-    * @param symbol the symbol of the token, e.g. eth, eos, etc. 
+    * @param _symbol the symbol of the token, e.g. eth, eos, etc. 
     * @param token_type 0 for eth, 1 for erc20 and 2 for erc721
     * @param fungible if the token is fungible - may remove later
     */
@@ -219,7 +219,7 @@ contract BaseWallet {
     /**
     * @dev deposits a non-fungbile token
     * @param tokenid the token id of the token being deposited
-    * @oaram index the index of the token being deposited
+    * @param index the index of the token being deposited
     * @param external_id the external id of the token being deposited
     */
     function _depositNonFungible(uint256 tokenid, uint256 index, uint256 external_id) internal {
@@ -232,7 +232,7 @@ contract BaseWallet {
     * @dev removes a non-fungible token
     * @param account the address of the account we are removing the token from
     * @param tokenid the internal token id of the token being removed
-    * @oaram index the internal index of the token being removed
+    * @param index the internal index of the token being removed
     * @param external_id the external id of the token being removed
     */
     function _removeNonFungible(address account, uint256 tokenid, uint256 index, uint256 external_id) internal {
